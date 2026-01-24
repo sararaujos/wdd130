@@ -1,11 +1,7 @@
 :root {
     --primary-color: #1b4965;
-    --secondary-color: #62b6cb;
     --accent1-color: #115586;
-    --accent2-color: #7bc4f8;
-    --text-color: #0b132b;
     --heading-font: "Miryad Pro Bold", sans-serif, serif;
-    --background-color: #f8f9fa;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -81,14 +77,14 @@ h2 {
     max-width: 1000px;
 }
 
-/* Client image */
-.client {
+.hero article img {
     width: 100px;
     height: auto;
-    float: left;
+    float: right;
     margin: 16px;
 }
 
+/* Client image */
 /* Footer icons */
 .small-image {
     width: 50px;
