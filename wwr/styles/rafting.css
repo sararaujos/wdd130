@@ -120,7 +120,6 @@ h2 {
 
 .history-grid {
     display: grid;
-    display: grid;
     /* activa Grid */
     grid-template-columns: 1fr 1fr 1fr;
     /* 3 columnas iguales */
@@ -177,4 +176,8 @@ footer {
 
 .copyright {
     text-align: center;
+}
+
+.socialmedia {
+    text-decoration: none
 }
