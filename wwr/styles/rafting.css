@@ -1,6 +1,8 @@
 :root {
     --primary-color: #2c3b44;
     --accent1-color: #3b4b57;
+    --accent2-color: #FFFFFF;
+    --section-bg-color: #FFFFFFCC;
     --heading-font: "Miryad Pro Bold", sans-serif, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -49,7 +51,7 @@ article {
 .navigation a {
     text-decoration: none;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
     border: none;
     border-radius: 16px;
     font-weight: bold;
@@ -64,7 +66,7 @@ article {
 
 h2 {
     font-family: var(--heading-font);
-    color: white;
+    color: var(--accent2-color);
     background-color: var(--primary-color);
     width: 100%;
     text-align: center;
@@ -86,7 +88,7 @@ h2 {
     top: 20px;
     left: 0;
     text-align: center;
-    color: white;
+    color: var(--accent2-color);
     font-size: 35px;
     background-color: var(--primary-color);
     width: 100%;
@@ -99,7 +101,7 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
     width: 83%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--section-bg-color);
     padding: 12px;
     max-width: 1300px;
 }
@@ -151,7 +153,7 @@ h2 {
 }
 
 figure {
-    border: thin silver solid;
+    border: var(--section-bg-color);
     display: flex;
     flex-flow: column;
     padding: 5px;
@@ -161,7 +163,7 @@ figure {
 
 figcaption {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
