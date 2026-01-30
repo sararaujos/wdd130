@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #1b4965;
-    --accent1-color: #115586;
+    --primary-color: #2c3b44;
+    --accent1-color: #3b4b57;
     --heading-font: "Miryad Pro Bold", sans-serif, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -23,6 +23,13 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
 nav,
 p,
 section,
@@ -31,8 +38,26 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navigation a {
     text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 12px;
+    min-width: 120px;
+    /* ancho mínimo */
 }
 
 /* HERO */
@@ -91,4 +116,65 @@ h2 {
 .small-image {
     width: 50px;
     height: auto;
+}
+
+.history-grid {
+    display: grid;
+    display: grid;
+    /* activa Grid */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 columnas iguales */
+    gap: 20px;
+    /* espacio entre columnas */
+    align-items: center;
+    /* alinea el contenido arriba */
+    margin: 2rem auto 0;
+    /* opcional: espacio alrededor */
+}
+
+.hpicture {
+    width: 70%;
+    /* que llene su columna */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    /* centro horizontal */
+}
+
+.gallery {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    /* horizontal */
+    gap: 16px;
+    /* espacio entre imágenes */
+    justify-content: center;
+}
+
+figure {
+    border: thin silver solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: var(--primary-color);
+    color: white;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.copyright {
+    text-align: center;
 }
