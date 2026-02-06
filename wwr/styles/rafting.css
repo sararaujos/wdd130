@@ -116,8 +116,9 @@ h2 {
 /* Client image */
 /* Footer icons */
 .small-image {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 50px;
+    object-fit: cover;
 }
 
 .history-grid {
@@ -182,4 +183,137 @@ footer {
 
 .socialmedia a {
     text-decoration: none
+}
+
+.contact-section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-section h1 {
+    position: static;
+    margin-bottom: 35px;
+    margin-top: 0;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.contact-info li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.contact-info {
+    margin-bottom: 35px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.contact-content > div {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.map {
+    width: 100%;
+}
+
+.form button {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form {
+    padding: 15px 25px 25px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: var(--body-font)
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.form label {
+    font-weight: 600;
+    color: var(--accent1-color);
+    font-size: 15px;
+}
+
+.form legend {
+    font-weight: 600;
+    padding: 0;
+    font-size: 15px;
+}
+
+.form input,
+.form textarea {
+    padding: 10px 13px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    border: 1px solid var(--accent1-color);
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form fieldset {
+    border: 1px solid var(--accent1-color);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.radius label {
+    font-weight: normal;
+}
+
+.form .checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery-contact {
+    margin: 40px 0 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.gallery-contact img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
 }
