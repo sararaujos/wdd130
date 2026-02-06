@@ -224,6 +224,10 @@ footer {
     width: 100%;
 }
 
+.map iframe {
+    border: 0;
+}
+
 .form button {
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -291,6 +295,16 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.radius > div {
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    gap: 10px;
+    /* espacio entre radio y texto */
+    margin-bottom: 8px;
+    /* espacio entre opciones */
 }
 
 .radius label {
