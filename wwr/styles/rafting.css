@@ -206,6 +206,7 @@ footer {
 
 .contact-info {
     margin-bottom: 35px;
+    text-align: center;
 }
 
 .contact-content {
@@ -231,7 +232,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     cursor: pointer;
-    width: 100%;
+    width: 92%;
     border: none;
     border-radius: 12px;
     padding: 14px;
@@ -257,6 +258,8 @@ footer {
     flex-direction: column;
     gap: 5px;
     padding-bottom: 5px;
+    width: 100%;
+    max-width: 500px;
     align-items: flex-start;
 }
 
@@ -286,11 +289,15 @@ footer {
     font-size: 16px;
     outline: none;
     transition: border 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 500px;
 }
 
 .form textarea {
     resize: vertical;
     min-height: 100px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .form fieldset {
@@ -301,6 +308,8 @@ footer {
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
 }
 
 .radius > div {
@@ -311,10 +320,14 @@ footer {
     /* espacio entre radio y texto */
     margin-bottom: 8px;
     /* espacio entre opciones */
+    width: 75%;
+    max-width: 300px;
 }
 
 .radius label {
     font-weight: normal;
+    width: 100%;
+    max-width: 500px;
 }
 
 .form .checkbox-group {
@@ -322,6 +335,16 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.form .checkbox-group input[type="checkbox"] {
+    width: auto;
+}
+
+.form .checkbox-group label {
+    font-weight: 600px;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .gallery-contact {
