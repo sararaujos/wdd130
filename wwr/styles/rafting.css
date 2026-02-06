@@ -248,7 +248,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    font-family: var(--body-font)
+    font-family: var(--body-font);
+    text-align: left;
 }
 
 .form-group {
@@ -262,12 +263,17 @@ footer {
     font-weight: 600;
     color: var(--accent1-color);
     font-size: 15px;
+    text-align: left;
+    align-self: flex-start;
 }
 
 .form legend {
     font-weight: 600;
     padding: 0;
     font-size: 15px;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .form input,
