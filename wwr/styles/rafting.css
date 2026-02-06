@@ -257,6 +257,7 @@ footer {
     flex-direction: column;
     gap: 5px;
     padding-bottom: 5px;
+    align-items: flex-start;
 }
 
 .form label {
@@ -299,6 +300,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: flex-start;
 }
 
 .radius > div {
