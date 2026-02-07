@@ -197,7 +197,7 @@ footer {
     margin-top: 0;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    text-align: center;
+    text-align: center !important;
 }
 
 .contact-info li {
