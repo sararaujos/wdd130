@@ -2,7 +2,7 @@
     --primary-color: #2c3b44;
     --accent1-color: #3b4b57;
     --accent2-color: #FFFFFF;
-    --section-bg-color: #FFFFFFCC;
+    --section-bg-color: #efecfacc;
     --heading-font: "Miryad Pro Bold", sans-serif, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -239,6 +239,7 @@ footer {
     padding: 14px;
     font-size: 18px;
     font-weight: bold;
+
 }
 
 .form {
@@ -260,7 +261,6 @@ footer {
     gap: 5px;
     padding-bottom: 5px;
     width: 100%;
-    max-width: 500px;
     align-items: flex-start;
 }
 
@@ -360,4 +360,142 @@ footer {
     width: 200px;
     height: 300px;
     object-fit: cover;
+}
+
+/* CALL TO ACTION */
+
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 14px 28px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cta-button:hover .button2:hover,
+button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    background-color: var(--section-bg-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.button2 {
+    display: block;
+    margin: auto;
+}
+
+/* HOME GRID */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item img {
+    margin: 0 auto 15px;
+    border-radius: 12px;
+}
+
+.grid-item h3 {
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    border-radius: 16px;
+    padding: 5px;
+    color: var(--accent2-color);
+    text-align: center;
+}
+
+.grid-item p {
+    background-color: var(--section-bg-color);
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item img,
+.grid-item h3,
+.grid-item p {
+    width: 70%;
+    max-width: 500px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.trip-item img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+}
+
+.trip-item h3,
+.trip-item p {
+    width: 100%;
+    text-align: center;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid var(--accent1-color);
+    padding: 12px;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border-radius: 8px;
+}
+
+.cta a {
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.cta p {
+    margin: 40px;
+    font-size: large;
 }
