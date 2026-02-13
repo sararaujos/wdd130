@@ -458,9 +458,13 @@ button:hover {
 }
 
 .trips-table table {
-    width: 100%;
+    width: 80%;
+    /* ahora ocupa solo 80% del contenedor */
+    max-width: 1100px;
+    /* opcional: para pantallas muy grandes */
+    margin: 30px auto 50px;
+    /* centra horizontalmente */
     border-collapse: collapse;
-    margin: 0px auto;
 }
 
 .trips-table th,
@@ -473,7 +477,6 @@ button:hover {
 .trips-table th {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    border-radius: 8px;
 }
 
 .cta a {
